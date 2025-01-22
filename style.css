@@ -2,3 +2,22 @@
     font-family: "NorseBold";
     src: url(assets/fonts/Norse-Bold.woff2);
 }
+
+:root {
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
