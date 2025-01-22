@@ -21,3 +21,10 @@ img {
   display: block;
   max-inline-size: 100%;
 }
+
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
