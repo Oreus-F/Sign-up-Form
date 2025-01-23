@@ -20,6 +20,7 @@ ol[role="list"], ul[role="list"] {
 img {
   display: block;
   max-inline-size: 100%;
+
 }
 
 body{
@@ -27,4 +28,20 @@ body{
     margin: 0;
     padding: 0;
     width: 100vw;
+}
+
+.left-part{
+  width: 30%;
+  height: 100vh;
+  background-image: url(assets/images/marsumilae-e9kPHCJCHM8-unsplash.jpg);
+  background-position: top right; 
+  background-size: 300%;
+}
+
+
+.left-part > div {
+  background-color: rgba(0, 0, 0, 0.4) ;
+  position: absolute;
+  top: 2px;
+  width: inherit;
 }
