@@ -31,17 +31,32 @@ body{
 }
 
 .left-part{
-  width: 30%;
+  width: 25%;
   height: 100vh;
   background-image: url(assets/images/marsumilae-e9kPHCJCHM8-unsplash.jpg);
   background-position: top right; 
-  background-size: 300%;
+  background-size:cover;
+  color: #fff;
 }
 
 
 .left-part > div {
   background-color: rgba(0, 0, 0, 0.4) ;
   position: absolute;
-  top: 2px;
+  top: 180px;
   width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+
+}
+
+.left-part > div > p {
+  font-family: "NorseBold", sans-serif;
+  font-size: 6rem;
+}
+
+.odin-logo{
+  width: 15%;
 }
