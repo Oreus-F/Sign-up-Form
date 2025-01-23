@@ -30,6 +30,8 @@ body{
     width: 100vw;
 }
 
+/* VISUAL PART / PICTURES / LOGO / TITLE */
+
 .left-part{
   width: 25%;
   height: 100vh;
@@ -37,6 +39,10 @@ body{
   background-position: top right; 
   background-size:cover;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 
@@ -60,4 +66,15 @@ body{
 .odin-logo{
   width: 20%;
   margin: 12px 0;
+}
+
+.left-part > div + p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  margin-bottom: 6px;
+}
+
+/* link for credit photo */
+.left-part > div + p > a {
+  color: #fff;
 }
