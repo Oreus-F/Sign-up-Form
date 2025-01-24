@@ -50,12 +50,10 @@ body{
   background-color: rgba(0, 0, 0, 0.4) ;
   position: absolute;
   top: 180px;
-  width: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5em;
-
 }
 
 .left-part > div > p {
@@ -77,4 +75,15 @@ body{
 /* link for credit photo */
 .left-part > div + p > a {
   color: #fff;
+}
+
+/* RIGHT PART */
+
+
+.explanation-part{
+  height: 306px;
+}
+
+.form-part{
+  height: 280px;
 }
