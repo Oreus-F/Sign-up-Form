@@ -64,6 +64,8 @@ body{
   display: flex;
   flex-direction: column;
 
+  position: relative;
+
 }
 
 .left-part > div {
@@ -145,8 +147,10 @@ body{
 /* FORM-PART */
 
 .form-part{
+  position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
+  box-shadow: 0px 4px 4px rgb(133, 133, 133);
 }
 
 
