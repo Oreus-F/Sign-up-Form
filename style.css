@@ -12,7 +12,7 @@
   --input-border: #E5E7EB 1px solid;
   --input-invalid: red 1px solid;
   --input-valid: green 1px solid;
-  --input-focus: 1px rgb(105, 105, 105) solid;
+  --input-focus: 1px rgb(107, 98, 233) solid;
 
 }
 
@@ -152,7 +152,7 @@ body{
 
 h3 {
   font-size: 1.4rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 li{
@@ -165,7 +165,7 @@ label{
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
   font-weight: 500;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 input{
@@ -186,4 +186,5 @@ input:invalid{
 input:focus{
   outline:none;
   border: var(--input-focus);
+  box-shadow: 1px 1px 4px rgb(170, 170, 170);
 }
