@@ -7,7 +7,7 @@
   font-size: 14px;
   --white-text: #fff;
   --headband-background: rgba(0, 0, 0, 0.4);
-  --background-lightgrey: #f3f3f3;
+  --background-lightgrey: #f5f5f5;
   --button-color: #596D48;
   --input-border: #E5E7EB 1px solid;
   --input-invalid: red 1px solid;
@@ -32,19 +32,23 @@ img {
 }
 
 body{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 100vw;
-    height: 100vh;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  overflow: hidden;
 }
 
 /* VISUAL PART / PICTURES / LOGO / TITLE */
 
 .left-part{
-
   flex: 1;
 
   background-image: url(assets/images/marsumilae-e9kPHCJCHM8-unsplash.jpg);
@@ -59,13 +63,8 @@ body{
 }
 
 .right-part{
-  
   flex: 2;
-  display: flex;
-  flex-direction: column;
-
   position: relative;
-
 }
 
 .left-part > div {
@@ -80,7 +79,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.6em;
 }
 
 .left-part > div > p {
@@ -114,44 +113,49 @@ body{
   padding-left: 100px;
 }
 
-.explanation-part{
-  height: 300px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.form-part, .button-part{
-  flex: 1;
-}
-
-.explanation-part, .button-part{
+.text-part{
   background-color: var(--background-lightgrey);
+  height: 100vh;
+
+
+  padding-top: 120px;
 }
 
-.explanation-part p{
+.text-part p{
   line-height: 1.3;
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-.explanation-part span{
+.text-part span{
   font-style: italic;
 }
 
-.explanation-part p + p + p{
+p.last-upper-text{
   margin: 25px 0 45px 0;
+}
+
+p.got-account{
+  position: absolute;
+  bottom: 120px;
+
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 /* FORM-PART */
 
 .form-part{
-  position: relative;
-  padding-top: 18px;
-  box-shadow: 0px 4px 4px rgb(133, 133, 133);
-}
+  background-color: var(--white-text);
 
+  position: absolute;
+  top: 300px;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  width: 100%;
+
+  box-shadow: 0px 4px 4px rgb(190, 188, 188);
+}
 
 h3 {
   font-size: 1.4rem;
@@ -172,7 +176,7 @@ label{
 }
 
 input{
-  width: 320px;
+  width: 240px;
   height: 24px;
 
   padding-left: 6px;
@@ -204,8 +208,11 @@ button{
   
   margin: 25px 0;
 
-  padding: 14px 50px;
+  padding: 14px 42px;
   border-radius: 8px;
   border: none;
   box-shadow: 3px 3px 3px rgb(185, 185, 185);
+
+  position: absolute;
+  bottom: -120px;
 }
