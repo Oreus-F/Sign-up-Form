@@ -9,10 +9,14 @@
   --headband-background: rgba(0, 0, 0, 0.4);
   --background-lightgrey: #f3f3f3;
   --button-color: #596D48;
+  --input-border: #E5E7EB 1px solid;
+  --input-invalid: red 1px solid;
+  --input-valid: green 1px solid;
 
 }
 
 h1, h2, h3, h4, h5, figure, p, ol, ul {
+  padding: 0;
   margin: 0;
 }
 
@@ -104,7 +108,7 @@ body{
 /* RIGHT PART */
 
 .right-part div {
-  padding: 0px 0px 0 100px;
+  padding-left: 100px;
 }
 
 .explanation-part{
@@ -136,3 +140,40 @@ body{
 .explanation-part p + p + p{
   margin: 25px 0 45px 0;
 }
+
+/* FORM-PART */
+
+.form-part{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+li{
+  display: inline-block;
+  margin: 0 70px 20px 0;
+}
+
+label{
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+input{
+  width: 320px;
+  height: 24px;
+
+  border: var(--input-border);
+  border-radius: 2px;
+}
+
+
+
