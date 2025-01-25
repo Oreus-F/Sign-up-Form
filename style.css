@@ -7,6 +7,9 @@
   line-height: 1.5;
   font-size: 14px;
   --white-text: #fff;
+  --headband-background: rgba(0, 0, 0, 0.4);
+  --background-lightgrey: #f3f3f3;
+  --button-color: #596D48;
 
 }
 
@@ -61,7 +64,7 @@ body{
 
 .left-part > div {
 
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: var(--headband-background);
 
   position: absolute;
   top: 160px;
@@ -96,17 +99,21 @@ body{
 
 /* link for credit photo */
 .left-part > div + p > a {
-  color: #fff;
+  color: var(--white-text);
 }
 
 /* RIGHT PART */
 
 .right-part div {
-  padding: 0 0 0 52px;
+  padding: 0px 100px 0 152px;
 }
 
 .explanation-part{
   height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .form-part, .button-part{
@@ -114,5 +121,17 @@ body{
 }
 
 .explanation-part, .button-part{
-  background-color: #f3f3f3;
+  background-color: var(--background-lightgrey);
+}
+
+.explanation-part p{
+  font-size: 1.5rem;
+  font-weight: 600;
+  
+
+}
+
+.explanation-part > p + p + p{
+  margin: 25px 0 45px 0; 
+  
 }
