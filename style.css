@@ -12,6 +12,7 @@
   --input-border: #E5E7EB 1px solid;
   --input-invalid: red 1px solid;
   --input-valid: green 1px solid;
+  --input-focus: 1px rgb(105, 105, 105) solid;
 
 }
 
@@ -171,9 +172,22 @@ input{
   width: 320px;
   height: 24px;
 
+  padding-left: 6px;
+  
+
   border: var(--input-border);
   border-radius: 2px;
 }
 
+input:invalid{
+  border: var(--input-invalid);
+}
 
+input:valid{
+  border: var(--input-valid);
+}
 
+input:focus{
+  outline:none;
+  border: var(--input-focus);
+}
