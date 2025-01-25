@@ -183,10 +183,6 @@ input:invalid{
   border: var(--input-invalid);
 }
 
-input:valid{
-  border: var(--input-valid);
-}
-
 input:focus{
   outline:none;
   border: var(--input-focus);
